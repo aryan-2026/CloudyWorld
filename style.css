@@ -1,0 +1,331 @@
+body{
+    background-image: url('https://wallpapercave.com/wp/wp7276833.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-style:oblique;
+    font-style: italic;
+
+}
+
+   @media only screen and (max-width: 767px)
+{
+body {
+  background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/10883.jpg');
+  font-style: italic;
+  
+    
+}
+}
+
+/* page loader */
+
+
+/* page loader end*/
+/* heading code start */
+.heading {
+    
+  text-align:center;
+  color: white;
+  font: 300% monospace;
+  font-style: italic;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }    /* heading code end */
+  
+.tagline {
+    text-align: center;
+    color:rgb(196, 207, 218);
+    margin:40px;
+    font-style: italic ;
+    font-family: monospace;
+
+}
+
+.databox {
+    text-align: center;
+    padding:10px ;
+}
+.searchTitle {
+    text-align: center;
+    margin:0px;
+    padding: 0px;
+}
+.data {
+    text-align: center;
+    padding: 0px;
+}
+#data1{
+    color:rgb(218, 175, 139);
+    font-size: 20px;
+    font-family:monospace
+    
+}
+#data2{
+    color:rgb(227, 220, 163);
+    font-size: 30px;
+    font-family: monospace;
+    
+}
+
+/* search bar code start */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+* {
+font-family: Roboto, sans-serif;
+padding: 0;
+margin: 0;
+}
+
+html, body {
+width: 100%;
+height: 100%;
+}
+
+.flexbox {
+
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.search {
+margin: 20px;
+}
+
+.search > h3 {
+font-weight: normal;
+}
+
+.search > h1,
+.search > h3 {
+color: white;
+margin-bottom: 15px;
+text-shadow: 0 1px #0091c2;
+}
+
+.search > div {
+display: inline-block;
+position: relative;
+filter: drop-shadow(0 1px #0091c2);
+}
+
+.search > div:after {
+content: "";
+background: white;
+width: 4px;
+height: 20px;
+position: absolute;
+top: 40px;
+right: 2px;
+transform: rotate(135deg);
+}
+
+.search > div > input {
+color: white;
+font-size: 16px;
+background: transparent;
+width: 25px;
+height: 25px;
+padding: 10px;
+border: solid 3px white;
+outline: none;
+border-radius: 35px;
+transition: width 0.5s;
+}
+
+.search > div > input::placeholder {
+color: #efefef;
+opacity: 0;
+transition: opacity 150ms ease-out;
+}
+
+.search > div > input:focus::placeholder {
+opacity: 1;
+}
+
+.search > div > input:focus,
+.search > div > input:not(:placeholder-shown) {
+width: 250px;
+}
+/* search bar code end */
+
+*{
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 0px;
+}
+
+.container{
+  padding:20px 70px;
+  color:#efefef;
+
+}
+
+.current-info{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap ;
+}
+
+.date-container .time{
+font-size:70px;
+font-weight: 100;
+}
+.date-container #am-pm{
+  font-size:30px;
+  margin-left:20px
+}
+.date-container .date{
+  font-size:30px;
+}
+
+.place-container{
+  text-align: end;
+}
+.place-container .time-zone{
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.place-container .country{
+  font-size: 40px;
+  font-weight: 700;
+
+}
+
+.current-info .other{
+  display:flex;
+  flex-direction: column;
+  background:rgba(24,24,27,0.6);
+  padding:20px;
+  border-radius:10px;
+  margin:10px 0;
+  border:1px solid #eeee;
+  
+
+}
+
+.current-info .other .weather-item{
+  display: flex;
+  justify-content: space-between;
+}
+
+.future-forecast{
+  background: rgba(24,24,27,0.5);
+  padding: 25px;
+  bottom:0;
+  display:flex;
+  color:#efefef;
+  width:100%;
+  align-items:center;
+  justify-content: center;
+  border-radius: 5px;
+  border:1px solid #eee;
+  flex-wrap: wrap;
+
+}
+
+.future-forecast .today{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid #f5f3f3;
+  margin: 5px 5px;
+  padding: 1px;
+  
+}
+@-webkit-keyframes blackWhite {  
+  0% { background-color: white; }
+  50% { background-color: white; }
+  51% { background-color: black; }
+  100% { background-color: black; }
+}
+
+@-webkit-keyframes blackWhiteFade {  
+  0% { background-color: white; }
+  50% { background-color: black; }
+  100% { background-color: white; }
+}
+
+.future-forecast .today {
+    height: 100px;
+    background-color: black;
+  -webkit-animation-name: blackWhite;
+  /* -webkit-animation-name: blackWhiteFade; */
+  -webkit-animation-iteration-count: infinite;  
+  -webkit-animation-duration: 2s; 
+}  
+/* border change*/
+
+.future-forecast .today .day{
+  padding:5px 15px;
+  background: #3c3c44;
+  border-radius:50px;
+  text-align:center;
+}
+
+.future-forecast .today .temp{
+  font-size:20px;
+  padding-top:15px;
+  
+}
+
+/*problem*/
+.future-forecast .weather-forecast{
+  display:flex;
+  justify-content:center;
+
+}
+
+.weather-forecast .weather-forecast-item{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  border: 1px solid #f8f8f8;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.weather-forecast .weather-forecast-item .day{
+  padding: 5px 15px;
+  background: #3c3c44;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.weather-forecast .weather-forecast-item .temp{
+  font-size: 100;
+}
+
+/* for mobile view*/
+@media only screen and (max-width:730px){
+  .future-forecast{
+    justify-content: start;
+    align-items: none;
+    overflow-y:scroll;
+  }
+}
+
+.future-forecast .today .other{
+    color: aqua;
+    overflow-block: inherit;
+}
